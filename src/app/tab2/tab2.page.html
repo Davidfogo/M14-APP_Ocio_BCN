@@ -1,17 +1,21 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
+<ion-header no-border>
+  <ion-toolbar color="primary">
+    <ion-title>¿A donde quieres ir?</ion-title>
+    
+  </ion-toolbar>
+  <ion-toolbar color="primary">
+    <ion-searchbar placeholder="Punto de partida"></ion-searchbar>
+    <ion-searchbar placeholder="destino"></ion-searchbar>
+    
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-button expand="block"><b>Buscar ruta mas cercana</b><ion-icon slot="end" name="arrow-forward"></ion-icon></ion-button>
+  
+  <img src="assets/img/mapaJoan.PNG" style="height: 100%;">
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  
 </ion-content>
+
+
