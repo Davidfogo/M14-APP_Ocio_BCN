@@ -11,9 +11,14 @@
             <h3>{{sw.tiposSitio}}</h3>
             <p>Latitud:<b>{{sw.latitud}}</b> / Longitud:<b>{{sw.longitud}}</b></p>
         </ion-label>
+
+        <ion-item style="width: 125px;">
+          <input type="file" [(ngModel)]="imatge" (change)="selectedFile($event, sw.idLoc)" />
+        </ion-item>
+     
       </ion-item>
       <ion-item-options side="start">
-        <ion-item-option  class="button-assertive icon ion-trash-a">INFO</ion-item-option>
+        <ion-item-option  class="button-assertive icon ion-trash-a" (click)="showModificar(sw)">INFO</ion-item-option>
         <ion-item-option color="danger" (click)="delete(sw.idLoc)">
           <ion-icon slot="icon-only" name="trash" ></ion-icon>
         </ion-item-option>

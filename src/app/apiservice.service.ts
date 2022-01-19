@@ -22,4 +22,12 @@ export class ApiserviceService {
   deleteLugar(data){
     return this.http.post('http://localhost:90/backend/delete.php', data);
   }
+
+  modificarLocation(data){
+    return this.http.post('http://localhost:90/backend/update.php', data);
+  }
+
+  modificarImage(data){
+    return this.http.post('http://localhost:90/backend/updateImg.php', data);
+  }
 }
